@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SCLAlertView
 
 class LoginViewController: UIViewController {
     @IBOutlet weak var userImageView: UIImageView!
@@ -22,7 +23,20 @@ class LoginViewController: UIViewController {
     }
 
     @IBAction func onCLickSinginButton(_ sender: UIButton) {
-        
+        if(emailTextField.text!.isEmpty || passwordTextField.text!.isEmpty) {
+            SCLAlertView().showError("بعض الحقول فارغة", subTitle:"قم بإدخال البريد الالكتروني وكلمة المرور", closeButtonTitle:"حسناً")
+        }
+        else {
+            //Login API
+//            UserDefaults.standard.set(true, forKey: "isLoggedIn")
+            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+            let homeVC = storyboard.instantiateViewController(withIdentifier: "Onboarding")
+            homeVC.modalPresentationStyle = .fullScreen
+            self.emailTextField.text = ""
+            self.passwordTextField.text = ""
+            self.present(homeVC, animated: true, completion: nil)
+
+        }
     }
     
     @IBAction func onClickForgetPasswordButton(_ sender: UIButton) {

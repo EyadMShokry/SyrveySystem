@@ -68,6 +68,8 @@
 	<key>UIAppFonts</key>
 	<array>
 		<string>HacenBeirutPoster.ttf</string>
+		<string>JF-Flat-Regular.ttf</string>
+		<string>din-next-lt-w23-regular.ttf</string>
 	</array>
 </dict>
 </plist>
