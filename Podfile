@@ -10,5 +10,5 @@ pod 'IQKeyboardManagerSwift'
 pod 'SCLAlertView'
 pod 'NVActivityIndicatorView'
 pod 'Moya'
-
+pod 'TextFieldEffects'
 end

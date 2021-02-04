@@ -9,12 +9,14 @@ PODS:
     - NVActivityIndicatorView/Base (= 5.0.1)
   - NVActivityIndicatorView/Base (5.0.1)
   - SCLAlertView (0.8)
+  - TextFieldEffects (1.6.0)
 
 DEPENDENCIES:
   - IQKeyboardManagerSwift
   - Moya
   - NVActivityIndicatorView
   - SCLAlertView
+  - TextFieldEffects
 
 SPEC REPOS:
   trunk:
@@ -23,6 +25,7 @@ SPEC REPOS:
     - Moya
     - NVActivityIndicatorView
     - SCLAlertView
+    - TextFieldEffects
 
 SPEC CHECKSUMS:
   Alamofire: 814429acc853c6c54ff123fc3d2ef66803823ce0
@@ -30,7 +33,8 @@ SPEC CHECKSUMS:
   Moya: 5b45dacb75adb009f97fde91c204c1e565d31916
   NVActivityIndicatorView: 738e843cb8924e9e4fc3e559d0728031624bf860
   SCLAlertView: 6a77bb2edfc65e04dbe57725546cb4107a506b85
+  TextFieldEffects: 529b8aff706fb40f82c41c780c0777941a893796
 
-PODFILE CHECKSUM: e342427a9f1562482307613fe53bd80012cae910
+PODFILE CHECKSUM: 73bf6fc235ba7c47ebcaaa7afd5d0c669b52481c
 
 COCOAPODS: 1.9.1
