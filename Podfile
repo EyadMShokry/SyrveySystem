@@ -11,4 +11,6 @@ pod 'SCLAlertView'
 pod 'NVActivityIndicatorView'
 pod 'Moya'
 pod 'TextFieldEffects'
+pod 'TransitionButton'
+pod 'iRecordView'
 end

@@ -19,8 +19,15 @@ class ThankingViewController: UIViewController {
     
 
     @IBAction func onClickGoHomeButton(_ sender: UIButton) {
+        let homeNavigationController = storyboard?.instantiateViewController(identifier: "HomeNavigation")
+        homeNavigationController!.modalPresentationStyle = .fullScreen
+        self.present(homeNavigationController!, animated: true, completion: nil)
     }
     
     @IBAction func onClickAddAnotherFeedbackButton(_ sender: UIButton) {
+        let surveyNavigationController = storyboard?.instantiateViewController(identifier: "SurveyNavigation")
+        surveyNavigationController!.modalPresentationStyle = .fullScreen
+        self.present(surveyNavigationController!, animated: true, completion: nil)
+
     }
 }

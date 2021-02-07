@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="HacenBeirutPoster.ttf">
+            <string>HacenBeirutPoster</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="1wX-ZU-j2v" customClass="HomeTableViewHeader" customModule="SurveySystem">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="608"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hyA-px-Aph" userLabel="Content View">
+                    <rect key="frame" x="5" y="44" width="365" height="559"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceLeftToRight" axis="vertical" alignment="bottom" spacing="35" translatesAutoresizingMaskIntoConstraints="NO" id="PBZ-Ff-YEy">
+                            <rect key="frame" x="37" y="9.5" width="291" height="536"/>
+                            <subviews>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="18" translatesAutoresizingMaskIntoConstraints="NO" id="wZt-Nz-Xaa">
+                                    <rect key="frame" x="0.0" y="0.0" width="291" height="479"/>
+                                    <subviews>
+                                        <stackView opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceLeftToRight" axis="vertical" alignment="bottom" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="AHi-tX-VJo">
+                                            <rect key="frame" x="0.0" y="0.0" width="291" height="119"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceLeftToRight" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Fjv-Hc-TAI">
+                                                    <rect key="frame" x="106" y="0.0" width="185" height="50"/>
+                                                    <subviews>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y4h-Hk-djF">
+                                                            <rect key="frame" x="0.0" y="0.0" width="125" height="50"/>
+                                                            <fontDescription key="fontDescription" name="HacenBeirutPoster" family="Hacen Beirut Poster" pointSize="20"/>
+                                                            <state key="normal" title="مطعم وكوفي شوب">
+                                                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            </state>
+                                                        </button>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="442-58-eel">
+                                                            <rect key="frame" x="135" y="0.0" width="50" height="50"/>
+                                                        </imageView>
+                                                    </subviews>
+                                                </stackView>
+                                                <button opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gp3-zo-GR7">
+                                                    <rect key="frame" x="0.0" y="70" width="291" height="49"/>
+                                                    <color key="backgroundColor" red="0.14901960784313725" green="0.16470588235294117" blue="0.20392156862745098" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="49" id="S4e-1x-BEo"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="HacenBeirutPoster" family="Hacen Beirut Poster" pointSize="15"/>
+                                                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <inset key="titleEdgeInsets" minX="0.0" minY="0.0" maxX="5" maxY="0.0"/>
+                                                    <state key="normal" title="إضافة تقييم" image="plus" catalog="system">
+                                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </state>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                            <integer key="value" value="10"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="boolean" keyPath="clipsToBounds" value="YES"/>
+                                                        <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="NO"/>
+                                                    </userDefinedRuntimeAttributes>
+                                                    <connections>
+                                                        <action selector="onClickAddSurveyButton:" destination="1wX-ZU-j2v" eventType="touchUpInside" id="hDe-VB-o2a"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="gp3-zo-GR7" secondAttribute="trailing" id="pMY-0i-j2Z"/>
+                                                <constraint firstItem="gp3-zo-GR7" firstAttribute="leading" secondItem="AHi-tX-VJo" secondAttribute="leading" id="vAy-3m-ObK"/>
+                                            </constraints>
+                                        </stackView>
+                                        <stackView opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceLeftToRight" axis="vertical" alignment="bottom" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="WTS-du-p9l">
+                                            <rect key="frame" x="0.0" y="137" width="291" height="342"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceLeftToRight" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="SaD-wT-Y7Y">
+                                                    <rect key="frame" x="187" y="0.0" width="104" height="24"/>
+                                                    <subviews>
+                                                        <button opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceLeftToRight" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TtJ-w3-3O2">
+                                                            <rect key="frame" x="0.0" y="0.0" width="75" height="24"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="75" id="O6f-gu-0vZ"/>
+                                                            </constraints>
+                                                            <fontDescription key="fontDescription" name="HacenBeirutPoster" family="Hacen Beirut Poster" pointSize="14"/>
+                                                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <inset key="titleEdgeInsets" minX="5" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="5" maxY="0.0"/>
+                                                            <state key="normal" title="هذا الشهر" image="chevron.down" catalog="system"/>
+                                                        </button>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" verticalHuggingPriority="251" image="stats" translatesAutoresizingMaskIntoConstraints="NO" id="Cg4-LS-CSd">
+                                                            <rect key="frame" x="80" y="0.0" width="24" height="24"/>
+                                                        </imageView>
+                                                    </subviews>
+                                                </stackView>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kFh-aS-5kz">
+                                                    <rect key="frame" x="0.0" y="32" width="291" height="310"/>
+                                                    <subviews>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="18" translatesAutoresizingMaskIntoConstraints="NO" id="tfC-AL-3Sd">
+                                                            <rect key="frame" x="30" y="30" width="231" height="250"/>
+                                                            <subviews>
+                                                                <stackView opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceLeftToRight" alignment="center" spacing="28.5" translatesAutoresizingMaskIntoConstraints="NO" id="jgq-a2-YqS">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="231" height="49"/>
+                                                                    <subviews>
+                                                                        <stackView opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceLeftToRight" axis="vertical" alignment="bottom" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="KXU-Cz-hc3">
+                                                                            <rect key="frame" x="0.0" y="0.0" width="153" height="49"/>
+                                                                            <subviews>
+                                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="75% من الزبائن سعداء بشدة" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vKj-Iq-a74">
+                                                                                    <rect key="frame" x="0.0" y="0.0" width="153" height="22"/>
+                                                                                    <constraints>
+                                                                                        <constraint firstAttribute="height" constant="22" id="N2Q-ki-Clx"/>
+                                                                                    </constraints>
+                                                                                    <fontDescription key="fontDescription" name="HacenBeirutPoster" family="Hacen Beirut Poster" pointSize="15"/>
+                                                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                                    <nil key="highlightedColor"/>
+                                                                                </label>
+                                                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nEj-ZH-WFm">
+                                                                                    <rect key="frame" x="62" y="27" width="91" height="22"/>
+                                                                                    <constraints>
+                                                                                        <constraint firstAttribute="height" constant="22" id="Yos-Al-Ay9"/>
+                                                                                    </constraints>
+                                                                                    <fontDescription key="fontDescription" name="HacenBeirutPoster" family="Hacen Beirut Poster" pointSize="14"/>
+                                                                                    <state key="normal" title="المزيد من التفاصيل">
+                                                                                        <color key="titleColor" red="0.4823529411764706" green="0.4823529411764706" blue="0.4823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                                    </state>
+                                                                                    <connections>
+                                                                                        <action selector="onClickShowMoreForLove:" destination="-1" eventType="touchUpInside" id="Qvp-SH-BQY"/>
+                                                                                    </connections>
+                                                                                </button>
+                                                                            </subviews>
+                                                                        </stackView>
+                                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="heartFilled" translatesAutoresizingMaskIntoConstraints="NO" id="jgt-op-ue8">
+                                                                            <rect key="frame" x="181.5" y="0.5" width="49.5" height="48"/>
+                                                                        </imageView>
+                                                                    </subviews>
+                                                                </stackView>
+                                                                <stackView opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceLeftToRight" alignment="center" spacing="28.5" translatesAutoresizingMaskIntoConstraints="NO" id="Vjd-zw-wCN">
+                                                                    <rect key="frame" x="0.0" y="67" width="231" height="49"/>
+                                                                    <subviews>
+                                                                        <stackView opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceLeftToRight" axis="vertical" alignment="bottom" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="bGt-QK-X5P">
+                                                                            <rect key="frame" x="0.0" y="0.0" width="153.5" height="49"/>
+                                                                            <subviews>
+                                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="15% من الزبائن سعداء" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SVK-am-Xxz">
+                                                                                    <rect key="frame" x="26.5" y="0.0" width="127" height="22"/>
+                                                                                    <constraints>
+                                                                                        <constraint firstAttribute="height" constant="22" id="4wP-c9-d2V"/>
+                                                                                    </constraints>
+                                                                                    <fontDescription key="fontDescription" name="HacenBeirutPoster" family="Hacen Beirut Poster" pointSize="15"/>
+                                                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                                    <nil key="highlightedColor"/>
+                                                                                </label>
+                                                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r9n-7s-npM">
+                                                                                    <rect key="frame" x="62.5" y="27" width="91" height="22"/>
+                                                                                    <constraints>
+                                                                                        <constraint firstAttribute="height" constant="22" id="g5h-mf-UhD"/>
+                                                                                    </constraints>
+                                                                                    <fontDescription key="fontDescription" name="HacenBeirutPoster" family="Hacen Beirut Poster" pointSize="14"/>
+                                                                                    <state key="normal" title="المزيد من التفاصيل">
+                                                                                        <color key="titleColor" red="0.4823529412" green="0.4823529412" blue="0.4823529412" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                                    </state>
+                                                                                    <connections>
+                                                                                        <action selector="onClickShowMoreForVeryHappy:" destination="-1" eventType="touchUpInside" id="TP1-Dq-3c2"/>
+                                                                                    </connections>
+                                                                                </button>
+                                                                            </subviews>
+                                                                        </stackView>
+                                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="beaming-faceFilled" translatesAutoresizingMaskIntoConstraints="NO" id="J0E-fl-0GC">
+                                                                            <rect key="frame" x="182" y="1" width="49" height="47"/>
+                                                                        </imageView>
+                                                                    </subviews>
+                                                                </stackView>
+                                                                <stackView opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceLeftToRight" alignment="center" spacing="28.5" translatesAutoresizingMaskIntoConstraints="NO" id="DQE-LJ-0hc">
+                                                                    <rect key="frame" x="0.0" y="134" width="231" height="49"/>
+                                                                    <subviews>
+                                                                        <stackView opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceLeftToRight" axis="vertical" alignment="bottom" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="wKP-gw-um5">
+                                                                            <rect key="frame" x="0.0" y="0.0" width="153.5" height="49"/>
+                                                                            <subviews>
+                                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="05% من الزبائن راضيين" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gIz-le-iMY">
+                                                                                    <rect key="frame" x="21" y="0.0" width="132.5" height="22"/>
+                                                                                    <constraints>
+                                                                                        <constraint firstAttribute="height" constant="22" id="zuk-F9-p89"/>
+                                                                                    </constraints>
+                                                                                    <fontDescription key="fontDescription" name="HacenBeirutPoster" family="Hacen Beirut Poster" pointSize="15"/>
+                                                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                                    <nil key="highlightedColor"/>
+                                                                                </label>
+                                                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z9R-aO-bOS">
+                                                                                    <rect key="frame" x="62.5" y="27" width="91" height="22"/>
+                                                                                    <constraints>
+                                                                                        <constraint firstAttribute="height" constant="22" id="lTY-7V-2BM"/>
+                                                                                    </constraints>
+                                                                                    <fontDescription key="fontDescription" name="HacenBeirutPoster" family="Hacen Beirut Poster" pointSize="14"/>
+                                                                                    <state key="normal" title="المزيد من التفاصيل">
+                                                                                        <color key="titleColor" red="0.4823529412" green="0.4823529412" blue="0.4823529412" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                                    </state>
+                                                                                    <connections>
+                                                                                        <action selector="onClickShowMoreForHappy:" destination="-1" eventType="touchUpInside" id="jnJ-HN-DGc"/>
+                                                                                    </connections>
+                                                                                </button>
+                                                                            </subviews>
+                                                                        </stackView>
+                                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="smileFaceFilled" translatesAutoresizingMaskIntoConstraints="NO" id="f5C-wy-gS6">
+                                                                            <rect key="frame" x="182" y="1" width="49" height="47"/>
+                                                                        </imageView>
+                                                                    </subviews>
+                                                                </stackView>
+                                                                <stackView opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceLeftToRight" alignment="center" spacing="28.5" translatesAutoresizingMaskIntoConstraints="NO" id="8bx-gG-XGH">
+                                                                    <rect key="frame" x="0.0" y="201" width="231" height="49"/>
+                                                                    <subviews>
+                                                                        <stackView opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceLeftToRight" axis="vertical" alignment="bottom" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="f1J-Ce-XmN">
+                                                                            <rect key="frame" x="0.0" y="0.0" width="153.5" height="49"/>
+                                                                            <subviews>
+                                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="05% من الزبائن غير راضيين" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xl1-2Y-LYz">
+                                                                                    <rect key="frame" x="0.0" y="0.0" width="153.5" height="22"/>
+                                                                                    <constraints>
+                                                                                        <constraint firstAttribute="height" constant="22" id="c0R-Qg-HgN"/>
+                                                                                    </constraints>
+                                                                                    <fontDescription key="fontDescription" name="HacenBeirutPoster" family="Hacen Beirut Poster" pointSize="15"/>
+                                                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                                    <nil key="highlightedColor"/>
+                                                                                </label>
+                                                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Pk-nl-BU2">
+                                                                                    <rect key="frame" x="62.5" y="27" width="91" height="22"/>
+                                                                                    <constraints>
+                                                                                        <constraint firstAttribute="height" constant="22" id="wwh-3G-A7V"/>
+                                                                                    </constraints>
+                                                                                    <fontDescription key="fontDescription" name="HacenBeirutPoster" family="Hacen Beirut Poster" pointSize="14"/>
+                                                                                    <state key="normal" title="المزيد من التفاصيل">
+                                                                                        <color key="titleColor" red="0.4823529412" green="0.4823529412" blue="0.4823529412" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                                    </state>
+                                                                                    <connections>
+                                                                                        <action selector="onClickShowMoreForSad:" destination="-1" eventType="touchUpInside" id="rgU-pb-gmK"/>
+                                                                                    </connections>
+                                                                                </button>
+                                                                            </subviews>
+                                                                        </stackView>
+                                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="downcastGray" translatesAutoresizingMaskIntoConstraints="NO" id="JIB-GO-r3f">
+                                                                            <rect key="frame" x="182" y="1" width="49" height="47"/>
+                                                                        </imageView>
+                                                                    </subviews>
+                                                                </stackView>
+                                                            </subviews>
+                                                        </stackView>
+                                                    </subviews>
+                                                    <color key="backgroundColor" red="0.14901960780000001" green="0.1647058824" blue="0.20392156859999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <constraints>
+                                                        <constraint firstItem="tfC-AL-3Sd" firstAttribute="centerX" secondItem="kFh-aS-5kz" secondAttribute="centerX" id="dH7-71-ovf"/>
+                                                        <constraint firstAttribute="trailing" secondItem="tfC-AL-3Sd" secondAttribute="trailing" constant="30" id="h8M-X4-40c"/>
+                                                        <constraint firstItem="tfC-AL-3Sd" firstAttribute="top" secondItem="kFh-aS-5kz" secondAttribute="top" constant="30" id="r1q-T3-EuF"/>
+                                                        <constraint firstAttribute="bottom" secondItem="tfC-AL-3Sd" secondAttribute="bottom" constant="30" id="ydz-k6-3lt"/>
+                                                    </constraints>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="NO"/>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                            <integer key="value" value="10"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="boolean" keyPath="clipsToBounds" value="YES"/>
+                                                    </userDefinedRuntimeAttributes>
+                                                </view>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="kFh-aS-5kz" secondAttribute="trailing" id="GaJ-z4-4gj"/>
+                                                <constraint firstItem="kFh-aS-5kz" firstAttribute="leading" secondItem="WTS-du-p9l" secondAttribute="leading" id="HeG-Ft-Vsd"/>
+                                            </constraints>
+                                        </stackView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="WTS-du-p9l" firstAttribute="leading" secondItem="wZt-Nz-Xaa" secondAttribute="leading" id="M0o-F6-YKI"/>
+                                        <constraint firstAttribute="trailing" secondItem="WTS-du-p9l" secondAttribute="trailing" id="tAO-1N-daB"/>
+                                    </constraints>
+                                </stackView>
+                                <stackView opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceLeftToRight" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Qk5-lo-9Qh">
+                                    <rect key="frame" x="189.5" y="514" width="101.5" height="22"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="اخر التقييمات" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BWK-k8-S3K">
+                                            <rect key="frame" x="0.0" y="0.0" width="71.5" height="22"/>
+                                            <fontDescription key="fontDescription" name="HacenBeirutPoster" family="Hacen Beirut Poster" pointSize="15"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" verticalHuggingPriority="251" image="file" translatesAutoresizingMaskIntoConstraints="NO" id="xnh-HN-iBy">
+                                            <rect key="frame" x="79.5" y="0.0" width="22" height="22"/>
+                                        </imageView>
+                                    </subviews>
+                                </stackView>
+                            </subviews>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="wZt-Nz-Xaa" secondAttribute="trailing" id="0lj-M3-hjz"/>
+                                <constraint firstItem="wZt-Nz-Xaa" firstAttribute="leading" secondItem="PBZ-Ff-YEy" secondAttribute="leading" id="yYq-6F-z56"/>
+                            </constraints>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="PBZ-Ff-YEy" firstAttribute="centerY" secondItem="hyA-px-Aph" secondAttribute="centerY" constant="-2.25" id="aKt-nx-ICD"/>
+                        <constraint firstAttribute="trailing" secondItem="PBZ-Ff-YEy" secondAttribute="trailing" constant="37" id="gen-Sk-uz4"/>
+                        <constraint firstItem="PBZ-Ff-YEy" firstAttribute="leading" secondItem="hyA-px-Aph" secondAttribute="leading" constant="37" id="shI-OE-kj1"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <constraints>
+                <constraint firstItem="hyA-px-Aph" firstAttribute="leading" secondItem="1Yw-ug-SFd" secondAttribute="leading" constant="5" id="QyO-E0-Rwc"/>
+                <constraint firstItem="hyA-px-Aph" firstAttribute="top" secondItem="1Yw-ug-SFd" secondAttribute="top" id="nhq-5z-WJ5"/>
+                <constraint firstItem="1Yw-ug-SFd" firstAttribute="trailing" secondItem="hyA-px-Aph" secondAttribute="trailing" constant="5" id="pt2-lp-oeT"/>
+                <constraint firstItem="1Yw-ug-SFd" firstAttribute="bottom" secondItem="hyA-px-Aph" secondAttribute="bottom" constant="5" id="wd6-W0-LoO"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="1Yw-ug-SFd"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="string" keyPath="reuseIdentifier" value="HomeTableViewHeader"/>
+            </userDefinedRuntimeAttributes>
+            <connections>
+                <outlet property="addSurveyButton" destination="gp3-zo-GR7" id="ZWD-cR-BKn"/>
+                <outlet property="brandLogo" destination="442-58-eel" id="Ffw-n1-Vfd"/>
+                <outlet property="brandName" destination="Y4h-Hk-djF" id="UKk-xa-eCE"/>
+                <outlet property="happyPersentage" destination="gIz-le-iMY" id="HRg-we-AMu"/>
+                <outlet property="lovePersentage" destination="vKj-Iq-a74" id="le8-Vr-hZT"/>
+                <outlet property="sadPersentage" destination="xl1-2Y-LYz" id="xDe-3D-wQX"/>
+                <outlet property="veryHappyPersentage" destination="SVK-am-Xxz" id="DBs-qo-Ga3"/>
+            </connections>
+            <point key="canvasLocation" x="-68.840579710144937" y="-57.589285714285708"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="beaming-faceFilled" width="49" height="47"/>
+        <image name="chevron.down" catalog="system" width="128" height="72"/>
+        <image name="downcastGray" width="49" height="47"/>
+        <image name="file" width="22" height="22"/>
+        <image name="heartFilled" width="49.5" height="48"/>
+        <image name="logo" width="50" height="50"/>
+        <image name="plus" catalog="system" width="128" height="113"/>
+        <image name="smileFaceFilled" width="49" height="47"/>
+        <image name="stats" width="24" height="24"/>
+    </resources>
+</document>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="HacenBeirutPoster.ttf">
+            <string>HacenBeirutPoster</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="HomeCell" rowHeight="97" id="Ggf-h1-3Wc" customClass="HomeTableViewCell" customModule="SurveySystem">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="100"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Ggf-h1-3Wc" id="XnD-hR-sRt">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="100"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" semanticContentAttribute="forceLeftToRight" translatesAutoresizingMaskIntoConstraints="NO" id="A18-G2-siv" userLabel="Cell View">
+                        <rect key="frame" x="37" y="5" width="246" height="90"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceLeftToRight" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="jMQ-aN-UYq">
+                                <rect key="frame" x="28.5" y="33.5" width="199.5" height="23.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="يوم 05-01-2021 الساعة 5:00 م" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4lY-Ee-ovk">
+                                        <rect key="frame" x="0.0" y="0.0" width="172.5" height="23.5"/>
+                                        <fontDescription key="fontDescription" name="HacenBeirutPoster" family="Hacen Beirut Poster" pointSize="15"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" verticalHuggingPriority="251" image="file" translatesAutoresizingMaskIntoConstraints="NO" id="vZi-Nc-Nnl">
+                                        <rect key="frame" x="177.5" y="0.0" width="22" height="23.5"/>
+                                    </imageView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.58823529409999997" green="0.73333333329999995" blue="0.48627450979999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="jMQ-aN-UYq" firstAttribute="centerY" secondItem="A18-G2-siv" secondAttribute="centerY" id="DNZ-ja-sVi"/>
+                            <constraint firstAttribute="trailing" secondItem="jMQ-aN-UYq" secondAttribute="trailing" constant="18" id="HfJ-K5-mzJ"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="10"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" red="0.094117647058823528" green="0.10196078431372549" blue="0.12549019607843137" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                <constraints>
+                    <constraint firstItem="A18-G2-siv" firstAttribute="leading" secondItem="XnD-hR-sRt" secondAttribute="leading" constant="37" id="Cys-bb-wVk"/>
+                    <constraint firstAttribute="bottom" secondItem="A18-G2-siv" secondAttribute="bottom" constant="5" id="H6k-xa-UOF"/>
+                    <constraint firstItem="A18-G2-siv" firstAttribute="top" secondItem="XnD-hR-sRt" secondAttribute="top" constant="5" id="xkC-t1-jqR"/>
+                    <constraint firstAttribute="trailing" secondItem="A18-G2-siv" secondAttribute="trailing" constant="37" id="zoR-JG-bYf"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" red="0.094117647058823528" green="0.10196078431372549" blue="0.12549019607843137" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <viewLayoutGuide key="safeArea" id="OEz-rT-AH0"/>
+            <connections>
+                <outlet property="cellLabel" destination="4lY-Ee-ovk" id="tRC-an-mSk"/>
+            </connections>
+            <point key="canvasLocation" x="121.73913043478262" y="156.02678571428569"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="file" width="22" height="22"/>
+    </resources>
+</document>

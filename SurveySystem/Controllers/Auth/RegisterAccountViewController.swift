@@ -28,7 +28,7 @@ class RegisterAccountViewController: UIViewController {
         }
         else {
             //Register API
-            
+            navigationController?.popViewController(animated: true)
         }
         
     }

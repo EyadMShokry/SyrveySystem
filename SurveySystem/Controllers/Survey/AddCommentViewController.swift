@@ -7,14 +7,23 @@
 //
 
 import UIKit
+import iRecordView
 
 class AddCommentViewController: UIViewController {
 
     @IBOutlet weak var commentTextView: UITextView!
+    @IBOutlet weak var recordButton: RecordButton!
+    @IBOutlet weak var recordView: RecordView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         adjustCommentTextView()
+        recordButton.recordView = self.recordView
+        recordView.delegate = self
+        recordView.isSoundEnabled = true
+        recordButton.tintColor = .white
+        recordView.slideToCancelTextColor = .systemRed
     }
     
     fileprivate func adjustCommentTextView() {
@@ -49,4 +58,21 @@ extension AddCommentViewController: UITextViewDelegate {
         }
     }
 
+}
+
+
+extension AddCommentViewController: RecordViewDelegate {
+    func onStart() {
+        
+    }
+    
+    func onCancel() {
+        
+    }
+    
+    func onFinished(duration: CGFloat) {
+        
+    }
+    
+    
 }
