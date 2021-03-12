@@ -8,6 +8,7 @@
 
 import UIKit
 import iRecordView
+import SCLAlertView
 
 class AddCommentViewController: UIViewController {
 
@@ -71,7 +72,8 @@ extension AddCommentViewController: RecordViewDelegate {
     }
     
     func onFinished(duration: CGFloat) {
-        
+        SCLAlertView().showSuccess("تم بنجاح", subTitle: "سيتم إرفاق رسالتك النصية مع استطلاع الرأي")
+        print(duration)
     }
     
     

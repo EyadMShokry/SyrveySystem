@@ -22,12 +22,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 //            let homeVC = storyboard.instantiateViewController(identifier: "Onboarding")
 //            self.window?.rootViewController = homeVC
 //        }
-        UINavigationBar.appearance().barTintColor = UIColor(displayP3Red: 24/255, green: 26/255, blue: 32/255, alpha: 1.0)
-        UINavigationBar.appearance().tintColor = UIColor.white
-        UINavigationBar.appearance().titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
-        UINavigationBar.appearance().isTranslucent = false
-        UINavigationBar.appearance().setBackgroundImage(UIImage(), for: .any, barMetrics: .default)
-        UINavigationBar.appearance().shadowImage = UIImage()
+//        UINavigationBar.appearance().barTintColor = UIColor(displayP3Red: 24/255, green: 26/255, blue: 32/255, alpha: 1.0)
+//        UINavigationBar.appearance().tintColor = UIColor.white
+//        UINavigationBar.appearance().titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
+//        UINavigationBar.appearance().isTranslucent = false
+//        UINavigationBar.appearance().setBackgroundImage(UIImage(), for: .any, barMetrics: .default)
+//        UINavigationBar.appearance().shadowImage = UIImage()
 
         IQKeyboardManager.shared.enable = true
         return true

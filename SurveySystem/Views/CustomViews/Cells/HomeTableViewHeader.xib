@@ -3,6 +3,7 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -22,7 +23,7 @@
                     <rect key="frame" x="5" y="44" width="365" height="559"/>
                     <subviews>
                         <stackView opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceLeftToRight" axis="vertical" alignment="bottom" spacing="35" translatesAutoresizingMaskIntoConstraints="NO" id="PBZ-Ff-YEy">
-                            <rect key="frame" x="37" y="9.5" width="291" height="536"/>
+                            <rect key="frame" x="37" y="8.5" width="291" height="537.5"/>
                             <subviews>
                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="18" translatesAutoresizingMaskIntoConstraints="NO" id="wZt-Nz-Xaa">
                                     <rect key="frame" x="0.0" y="0.0" width="291" height="479"/>
@@ -31,31 +32,31 @@
                                             <rect key="frame" x="0.0" y="0.0" width="291" height="119"/>
                                             <subviews>
                                                 <stackView opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceLeftToRight" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Fjv-Hc-TAI">
-                                                    <rect key="frame" x="106" y="0.0" width="185" height="50"/>
+                                                    <rect key="frame" x="93" y="0.0" width="198" height="50"/>
                                                     <subviews>
                                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y4h-Hk-djF">
-                                                            <rect key="frame" x="0.0" y="0.0" width="125" height="50"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="138" height="50"/>
                                                             <fontDescription key="fontDescription" name="HacenBeirutPoster" family="Hacen Beirut Poster" pointSize="20"/>
                                                             <state key="normal" title="مطعم وكوفي شوب">
-                                                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <color key="titleColor" name="TextColor"/>
                                                             </state>
                                                         </button>
                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="442-58-eel">
-                                                            <rect key="frame" x="135" y="0.0" width="50" height="50"/>
+                                                            <rect key="frame" x="148" y="0.0" width="50" height="50"/>
                                                         </imageView>
                                                     </subviews>
                                                 </stackView>
                                                 <button opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gp3-zo-GR7">
                                                     <rect key="frame" x="0.0" y="70" width="291" height="49"/>
-                                                    <color key="backgroundColor" red="0.14901960784313725" green="0.16470588235294117" blue="0.20392156862745098" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="backgroundColor" name="LogoBackground"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="49" id="S4e-1x-BEo"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" name="HacenBeirutPoster" family="Hacen Beirut Poster" pointSize="15"/>
-                                                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <color key="tintColor" name="TextColor"/>
                                                     <inset key="titleEdgeInsets" minX="0.0" minY="0.0" maxX="5" maxY="0.0"/>
                                                     <state key="normal" title="إضافة تقييم" image="plus" catalog="system">
-                                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <color key="titleColor" name="TextColor"/>
                                                     </state>
                                                     <userDefinedRuntimeAttributes>
                                                         <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -89,7 +90,9 @@
                                                             <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <inset key="titleEdgeInsets" minX="5" minY="0.0" maxX="0.0" maxY="0.0"/>
                                                             <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="5" maxY="0.0"/>
-                                                            <state key="normal" title="هذا الشهر" image="chevron.down" catalog="system"/>
+                                                            <state key="normal" title="هذا الشهر" image="chevron.down" catalog="system">
+                                                                <color key="titleColor" name="TextColor"/>
+                                                            </state>
                                                         </button>
                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" verticalHuggingPriority="251" image="stats" translatesAutoresizingMaskIntoConstraints="NO" id="Cg4-LS-CSd">
                                                             <rect key="frame" x="80" y="0.0" width="24" height="24"/>
@@ -109,22 +112,22 @@
                                                                             <rect key="frame" x="0.0" y="0.0" width="153" height="49"/>
                                                                             <subviews>
                                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="75% من الزبائن سعداء بشدة" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vKj-Iq-a74">
-                                                                                    <rect key="frame" x="0.0" y="0.0" width="153" height="22"/>
+                                                                                    <rect key="frame" x="16.5" y="0.0" width="136.5" height="22"/>
                                                                                     <constraints>
                                                                                         <constraint firstAttribute="height" constant="22" id="N2Q-ki-Clx"/>
                                                                                     </constraints>
                                                                                     <fontDescription key="fontDescription" name="HacenBeirutPoster" family="Hacen Beirut Poster" pointSize="15"/>
-                                                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                                    <color key="textColor" name="TextColor"/>
                                                                                     <nil key="highlightedColor"/>
                                                                                 </label>
                                                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nEj-ZH-WFm">
-                                                                                    <rect key="frame" x="62" y="27" width="91" height="22"/>
+                                                                                    <rect key="frame" x="65" y="27" width="88" height="22"/>
                                                                                     <constraints>
                                                                                         <constraint firstAttribute="height" constant="22" id="Yos-Al-Ay9"/>
                                                                                     </constraints>
                                                                                     <fontDescription key="fontDescription" name="HacenBeirutPoster" family="Hacen Beirut Poster" pointSize="14"/>
                                                                                     <state key="normal" title="المزيد من التفاصيل">
-                                                                                        <color key="titleColor" red="0.4823529411764706" green="0.4823529411764706" blue="0.4823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                                        <color key="titleColor" systemColor="systemGrayColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                                     </state>
                                                                                     <connections>
                                                                                         <action selector="onClickShowMoreForLove:" destination="-1" eventType="touchUpInside" id="Qvp-SH-BQY"/>
@@ -144,22 +147,23 @@
                                                                             <rect key="frame" x="0.0" y="0.0" width="153.5" height="49"/>
                                                                             <subviews>
                                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="15% من الزبائن سعداء" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SVK-am-Xxz">
-                                                                                    <rect key="frame" x="26.5" y="0.0" width="127" height="22"/>
+                                                                                    <rect key="frame" x="46" y="0.0" width="107.5" height="22"/>
                                                                                     <constraints>
                                                                                         <constraint firstAttribute="height" constant="22" id="4wP-c9-d2V"/>
                                                                                     </constraints>
                                                                                     <fontDescription key="fontDescription" name="HacenBeirutPoster" family="Hacen Beirut Poster" pointSize="15"/>
-                                                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                                    <color key="textColor" name="TextColor"/>
                                                                                     <nil key="highlightedColor"/>
                                                                                 </label>
                                                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r9n-7s-npM">
-                                                                                    <rect key="frame" x="62.5" y="27" width="91" height="22"/>
+                                                                                    <rect key="frame" x="65.5" y="27" width="88" height="22"/>
                                                                                     <constraints>
                                                                                         <constraint firstAttribute="height" constant="22" id="g5h-mf-UhD"/>
                                                                                     </constraints>
                                                                                     <fontDescription key="fontDescription" name="HacenBeirutPoster" family="Hacen Beirut Poster" pointSize="14"/>
                                                                                     <state key="normal" title="المزيد من التفاصيل">
                                                                                         <color key="titleColor" red="0.4823529412" green="0.4823529412" blue="0.4823529412" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                                        <color key="titleShadowColor" systemColor="systemGrayColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                                     </state>
                                                                                     <connections>
                                                                                         <action selector="onClickShowMoreForVeryHappy:" destination="-1" eventType="touchUpInside" id="TP1-Dq-3c2"/>
@@ -179,22 +183,22 @@
                                                                             <rect key="frame" x="0.0" y="0.0" width="153.5" height="49"/>
                                                                             <subviews>
                                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="05% من الزبائن راضيين" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gIz-le-iMY">
-                                                                                    <rect key="frame" x="21" y="0.0" width="132.5" height="22"/>
+                                                                                    <rect key="frame" x="43" y="0.0" width="110.5" height="22"/>
                                                                                     <constraints>
                                                                                         <constraint firstAttribute="height" constant="22" id="zuk-F9-p89"/>
                                                                                     </constraints>
                                                                                     <fontDescription key="fontDescription" name="HacenBeirutPoster" family="Hacen Beirut Poster" pointSize="15"/>
-                                                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                                    <color key="textColor" name="TextColor"/>
                                                                                     <nil key="highlightedColor"/>
                                                                                 </label>
                                                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z9R-aO-bOS">
-                                                                                    <rect key="frame" x="62.5" y="27" width="91" height="22"/>
+                                                                                    <rect key="frame" x="65.5" y="27" width="88" height="22"/>
                                                                                     <constraints>
                                                                                         <constraint firstAttribute="height" constant="22" id="lTY-7V-2BM"/>
                                                                                     </constraints>
                                                                                     <fontDescription key="fontDescription" name="HacenBeirutPoster" family="Hacen Beirut Poster" pointSize="14"/>
                                                                                     <state key="normal" title="المزيد من التفاصيل">
-                                                                                        <color key="titleColor" red="0.4823529412" green="0.4823529412" blue="0.4823529412" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                                        <color key="titleColor" systemColor="systemGrayColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                                     </state>
                                                                                     <connections>
                                                                                         <action selector="onClickShowMoreForHappy:" destination="-1" eventType="touchUpInside" id="jnJ-HN-DGc"/>
@@ -214,22 +218,22 @@
                                                                             <rect key="frame" x="0.0" y="0.0" width="153.5" height="49"/>
                                                                             <subviews>
                                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="05% من الزبائن غير راضيين" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xl1-2Y-LYz">
-                                                                                    <rect key="frame" x="0.0" y="0.0" width="153.5" height="22"/>
+                                                                                    <rect key="frame" x="23.5" y="0.0" width="130" height="22"/>
                                                                                     <constraints>
                                                                                         <constraint firstAttribute="height" constant="22" id="c0R-Qg-HgN"/>
                                                                                     </constraints>
                                                                                     <fontDescription key="fontDescription" name="HacenBeirutPoster" family="Hacen Beirut Poster" pointSize="15"/>
-                                                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                                    <color key="textColor" name="TextColor"/>
                                                                                     <nil key="highlightedColor"/>
                                                                                 </label>
                                                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Pk-nl-BU2">
-                                                                                    <rect key="frame" x="62.5" y="27" width="91" height="22"/>
+                                                                                    <rect key="frame" x="65.5" y="27" width="88" height="22"/>
                                                                                     <constraints>
                                                                                         <constraint firstAttribute="height" constant="22" id="wwh-3G-A7V"/>
                                                                                     </constraints>
                                                                                     <fontDescription key="fontDescription" name="HacenBeirutPoster" family="Hacen Beirut Poster" pointSize="14"/>
                                                                                     <state key="normal" title="المزيد من التفاصيل">
-                                                                                        <color key="titleColor" red="0.4823529412" green="0.4823529412" blue="0.4823529412" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                                        <color key="titleColor" systemColor="systemGrayColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                                     </state>
                                                                                     <connections>
                                                                                         <action selector="onClickShowMoreForSad:" destination="-1" eventType="touchUpInside" id="rgU-pb-gmK"/>
@@ -245,7 +249,7 @@
                                                             </subviews>
                                                         </stackView>
                                                     </subviews>
-                                                    <color key="backgroundColor" red="0.14901960780000001" green="0.1647058824" blue="0.20392156859999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="backgroundColor" name="LogoBackground"/>
                                                     <constraints>
                                                         <constraint firstItem="tfC-AL-3Sd" firstAttribute="centerX" secondItem="kFh-aS-5kz" secondAttribute="centerX" id="dH7-71-ovf"/>
                                                         <constraint firstAttribute="trailing" secondItem="tfC-AL-3Sd" secondAttribute="trailing" constant="30" id="h8M-X4-40c"/>
@@ -273,16 +277,16 @@
                                     </constraints>
                                 </stackView>
                                 <stackView opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceLeftToRight" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Qk5-lo-9Qh">
-                                    <rect key="frame" x="189.5" y="514" width="101.5" height="22"/>
+                                    <rect key="frame" x="196.5" y="514" width="94.5" height="23.5"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="اخر التقييمات" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BWK-k8-S3K">
-                                            <rect key="frame" x="0.0" y="0.0" width="71.5" height="22"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="64.5" height="23.5"/>
                                             <fontDescription key="fontDescription" name="HacenBeirutPoster" family="Hacen Beirut Poster" pointSize="15"/>
-                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="textColor" name="TextColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" verticalHuggingPriority="251" image="file" translatesAutoresizingMaskIntoConstraints="NO" id="xnh-HN-iBy">
-                                            <rect key="frame" x="79.5" y="0.0" width="22" height="22"/>
+                                            <rect key="frame" x="72.5" y="0.0" width="22" height="23.5"/>
                                         </imageView>
                                     </subviews>
                                 </stackView>
@@ -334,5 +338,11 @@
         <image name="plus" catalog="system" width="128" height="113"/>
         <image name="smileFaceFilled" width="49" height="47"/>
         <image name="stats" width="24" height="24"/>
+        <namedColor name="LogoBackground">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="TextColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
     </resources>
 </document>
